@@ -8,6 +8,6 @@ CREATE TABLE todo
   description       VARCHAR NOT NULL,
   started TIMESTAMP DEFAULT now(),
   expiration_date TIMESTAMP,
-  status VARCHAR NOT NULL
+  status VARCHAR NOT NULL DEFAULT 'In progress'
 
 );
