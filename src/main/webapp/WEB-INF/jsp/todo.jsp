@@ -56,6 +56,11 @@
 
                 <td>${todo.expiration_date}</td>
                 <td>${todo.status}</td>
+                <td><a class = "open-EditUserDialog btn btn-primary"  data-toggle="modal"
+                       data-id = "${todo.id}" data-description="${todo.description}" data-expiration = "${todo.expiration_date}" data-status = "${todo.status}"
+                       href="#editModal">Edit</a></td>
+
+                <td><a class = "btn btn-danger" href="<c:url value="/remove/${todo.id}/"/>">Delete</a></td>
 
             </tr>
         </c:forEach>
